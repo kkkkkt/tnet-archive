@@ -143,6 +143,6 @@ console.log(newJson.length);
 newJson = Array.from(new Set(newJson.map(JSON.stringify))).map(JSON.parse);
 console.log(newJson.length);
 
-newJson.sort((a, b) => new Date(a.dateTime) - new Date(b.dateTime));
+newJson.sort((a, b) => new Date(a.dateTime).getTime() - new Date(b.dateTime).getTime());
 
-fs.writeFileSync("json/tdnet.json", JSON.stringify(newJson, null, 2));
+fs.writeFileSync("json/tdnet2.json", JSON.stringify(newJson, null, 2));
