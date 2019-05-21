@@ -1,10 +1,3 @@
-//https://www.release.tdnet.info/inbs/I_list_004_20190517.html
-//https://www.release.tdnet.info/inbs/I_list_001_20190517.html
-
-const name = "https://www.release.tdnet.info/inbs/I_list_001_20190417.html"
-
-//https://www.release.tdnet.info/inbs/I_list_003_20190417.html
-
 const moment = require('moment');
 const fs = require('fs');
 
@@ -21,9 +14,7 @@ TargetMonthArray = () => {
 
   while (current <= end) {
     let format = moment(current).format("YYYYMMDD");
-//    let formatJson = `${format}.json`;
     res.push(format);
-
     current.setDate(current.getDate() + 1);
   }
 
@@ -47,11 +38,8 @@ crawlDate = (date, crawlForce = false) => {
     }
 
     const path = `https://www.release.tdnet.info/inbs/${name}`
-//    console.log(path);
     const command = `wget --no-check-certificate "${path}"`;
-
     let res = shell.exec(command);
-//    console.log(res);
 
     if (res.code != 0) {
       return;
@@ -64,7 +52,6 @@ crawlDate = (date, crawlForce = false) => {
 crawlThisMonth = () => {
   const dateArray = TargetMonthArray();
   dateArray.forEach(date => {
-//    console.log(date);
     crawlDate(date);
   });
 }
@@ -72,13 +59,10 @@ crawlThisMonth = () => {
 
 shell.cd("tdnet-html");
 
-
 crawlThisMonth();
-
-//return;
 
 let today = moment().format("YYYYMMDD");
 let yesterday = moment().subtract(1, "days").format("YYYYMMDD");
 
-//crawlDate(yesterday, true);
+crawlDate(yesterday, true);
 crawlDate(today, true);
