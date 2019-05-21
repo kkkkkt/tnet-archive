@@ -1,0 +1,25 @@
+{
+  "name": "tnet-archive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkkkkt/tnet-archive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "moment": "^2.24.0",
+    "shelljs": "^0.8.3"
+  },
+  "bugs": {
+    "url": "https://github.com/kkkkkt/tnet-archive/issues"
+  },
+  "homepage": "https://github.com/kkkkkt/tnet-archive#readme"
+}
