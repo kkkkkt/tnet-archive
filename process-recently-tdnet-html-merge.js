@@ -140,8 +140,11 @@ console.log(tdnetJson.length);
 let newJson = [...tdnetJson, ...recentJson]
 console.log(newJson.length);
 
+// filtering unique data
 newJson = Array.from(new Set(newJson.map(JSON.stringify))).map(JSON.parse);
 console.log(newJson.length);
+
+fs.writeFileSync("json/tdnet.json", JSON.stringify(newJson, null, 2));
 
 return;
 
