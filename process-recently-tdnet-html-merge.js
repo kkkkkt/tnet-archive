@@ -130,7 +130,6 @@ shell.cd("tdnet-html");
 
 let recentJson = processRecentData();
 
-//console.log(resJson);
 
 let tdnet = fs.readFileSync("json/tdnet.json", "utf8");
 let tdnetJson = JSON.parse(tdnet);
@@ -144,20 +143,6 @@ console.log(newJson.length);
 newJson = Array.from(new Set(newJson.map(JSON.stringify))).map(JSON.parse);
 console.log(newJson.length);
 
+newJson.sort((a, b) => new Date(a.dateTime) - new Date(b.dateTime));
+
 fs.writeFileSync("json/tdnet.json", JSON.stringify(newJson, null, 2));
-
-return;
-
-shell.cd("tdnet-html");
-
-let results = processAll();
-
-if (results && results.length > 0) {
-  fs.writeFile("json/tdnet.json", JSON.stringify(results, null, 2), (err) => {
-    if (err) {
-        console.error(err);
-        return;
-    };
-    console.log("File has been created");
-  });
-}
