@@ -1,0 +1,40 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    environment:
+      TZ: Asia/Tokyo
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+          - 7e:de:84:2c:3b:94:47:0a:6d:c0:ea:e1:e2:74:8d:32
+      - checkout
+      - run: npm i
+      - run:
+          name: crawl
+          command: |
+            node crawl-tdnet.js
+            node process-recently-tdnet-html-merge.js
+            if [[ `git status --porcelain` ]]; then
+              git config user.email "circle-ci-auto@gmail.com"
+              git config user.name "circleci"
+              git add .
+              git commit -m 'crawled auto'
+              git push origin master
+            fi
+workflows:
+  version: 2
+  normal_workflow:
+    jobs:
+      - build
+  schedule_workflow:
+    triggers:
+      - schedule:
+          cron: "5,35 * * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
