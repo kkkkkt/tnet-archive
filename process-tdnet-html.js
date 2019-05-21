@@ -113,26 +113,18 @@ processTdnetHtmlDayToJson = (year, month, day) => {
 }
 
 processAll = () => {
-  // Iterate data
-
   let first = new Date(`2019-04-17`);
   let current = first;
 
   let today = new Date();
 
   let results = [];
-  while (current < today) {
+  while (current <= today) {
 
     console.log(current);
     let year = current.getFullYear();
     let month = current.getMonth() + 1;
     let day = current.getDate();
-
-//    console.log(year);
-//    console.log(month);
-//    console.log(day);
-//    console.log("");
-
     let res = processTdnetHtmlDayToJson(year, month, day);
     console.log(res.length);
 
@@ -152,14 +144,7 @@ const resultFolderName = "json";
 
 shell.cd("tdnet-html");
 
-//let res = processTdnetHtmlToJson(2019, 5, 15, 1)
-//let results = processTdnetHtmlDayToJson(2019, 5, 15)
-//console.log(res.length);
-
 let results = processAll();
-
-//console.log(results);
-//fs.writeFile("json/tdnet.json", JSON.stringify(results));
 
 if (results && results.length > 0) {
   fs.writeFile("json/tdnet.json", JSON.stringify(results, null, 2), (err) => {

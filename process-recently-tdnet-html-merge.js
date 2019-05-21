@@ -102,15 +102,15 @@ processTdnetHtmlDayToJson = (year, month, day) => {
 }
 
 processRecentData = () => {
-  let today = new Date();
 //  let first = moment().subtract(7, "days").toDate();
   let first = moment().subtract(3, "days").toDate();
+
+  let today = new Date();
   let current = first;
 
   let results = [];
-  while (current < today) {
 
-    console.log(current);
+  while (current <= today) {
     let year = current.getFullYear();
     let month = current.getMonth() + 1;
     let day = current.getDate();
@@ -128,16 +128,20 @@ processRecentData = () => {
 
 shell.cd("tdnet-html");
 
-//let recentJson = processRecentData();
+let recentJson = processRecentData();
 
 //console.log(resJson);
 
 let tdnet = fs.readFileSync("json/tdnet.json", "utf8");
 let tdnetJson = JSON.parse(tdnet);
 
-console.log(tdnetJson[0]);
+console.log(tdnetJson.length);
 
-// TODO: marge data unique
+let newJson = [...tdnetJson, ...recentJson]
+console.log(newJson.length);
+
+newJson = Array.from(new Set(newJson.map(JSON.stringify))).map(JSON.parse);
+console.log(newJson.length);
 
 return;
 
