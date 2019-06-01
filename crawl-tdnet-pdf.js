@@ -3,12 +3,12 @@ const fs = require('fs');
 
 const shell = require('shelljs');
 
-const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
+//const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
 const TARGET_JSON = "tdnet-html/json/tdnet.json"
 const json = require("./tdnet-html/json/tdnet.json");
 
 
-json.forEach(data => {
+json.reverse().forEach(data => {
 
   target = `https://www.release.tdnet.info/inbs/${data.link}`;
   console.log(target);
@@ -21,12 +21,3 @@ json.forEach(data => {
   }
 })
 
-// if (results && results.length > 0) {
-//   fs.writeFile("json/tdnet.json", JSON.stringify(results, null, 2), (err) => {
-//     if (err) {
-//         console.error(err);
-//         return;
-//     };
-//     console.log("File has been created");
-//   });
-// }
