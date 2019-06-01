@@ -16,7 +16,6 @@ jobs:
           command: |
             node crawl-tdnet.js
             node process-tdnet-html.js
-            node crawl-tdnet-pdf.js
             if [[ `git status --porcelain` ]]; then
               git config user.email "circle-ci-auto@gmail.com"
               git config user.name "circleci"
