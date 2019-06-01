@@ -147,7 +147,9 @@ shell.cd("tdnet-html");
 let results = processAll();
 
 if (results && results.length > 0) {
-  fs.writeFile("json/tdnet.json", JSON.stringify(results, null, 2), (err) => {
+
+  results.sort((a, b) => new Date(a.dateTime).getTime() - new Date(b.dateTime).getTime());
+  fs.writeFile("json/tdnet2.json", JSON.stringify(results, null, 2), (err) => {
     if (err) {
         console.error(err);
         return;
@@ -155,3 +157,11 @@ if (results && results.length > 0) {
     console.log("File has been created");
   });
 }
+
+
+// TODO: add metadata (update info)
+// TODO: add recent data( 2-3 days), weekly data (1 week), month data (1 month)
+
+// const current = new moment();
+
+// update to next version
