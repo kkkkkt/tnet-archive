@@ -9,24 +9,127 @@
 <meta http-equiv="Expires" content="0">
 <script type="text/javascript" charset="UTF-8" src="./js/I_JAVASCRIPT.js"></script>
 <script type="text/javascript" charset="UTF-8" src="./js/I_MENSEKI.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./runtime/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+<!--
+  $(document).ready(function(){
+    $(".pagerTd > DIV >  DIV[onClick]").mousedown(function(event){
+      event.currentTarget.setAttribute("id","pager_active");
+    });
+    $(".pagerTd > DIV > DIV[onClick]").mouseup(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+    $(".pagerTd > DIV > DIV[onClick]").mouseleave(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+
+    $(".xbrl-mask > DIV > A").mousedown(function(event){
+      event.currentTarget.setAttribute("id","xbrl-button_active");
+    });
+    $(".xbrl-mask > DIV > A").mouseup(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+    $(".xbrl-mask > DIV > A").mouseleave(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+  });
+// -->
+</script>
 <link rel="stylesheet" href="./css/I_STYLE.css" media="screen">
 </head>
 <body leftMargin="0" topMargin="0" bottomMargin="0" marginwidth="0" marginheight="0" width="100%" style="background-color: #eeeeee;">
 <form method="get" name="form2" action="../">
 <table border="0" cellSpacing="0" cellPadding="0" id="list-body-box">
 <tr>
-<td>
+<td id="list-table-data">
 <div id="floating-menu">
 <table border="0" cellSpacing="0" cellPadding="0" align="left" id="kaiji-info-box-top">
 <tr>
 <td align="left" noWrap id="kaiji-kensu-1">
 <div id="kaiji-date-1">2020年03月31日</div>
-<div id="kaiji-text-1">に開示された情報はありません。</div>
+<div id="kaiji-text-1">に開示された情報</div>
+</td>
+<td></td>
+<td align="center" noWrap class="pagerTd">
+<div id="pager-box-top">
+<div class="kaijiSum">1～4件&nbsp;/&nbsp;全4件</div>
+<div class="pager-L" onClick="pager('')"><img src="./gif/icn_back.png" alt="前へ"></img><span>前へ</span></div>
+<div class="pager-O" onClick="pagerLink('I_list_001_20200331.html')">1</div>
+<div class="pager-R" onClick="pager('')"><span>次へ</span><img src="./gif/icn_next.png" alt="次へ"></img></div>
+</div>
+</td>
+</tr>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="list-head">
+<tr>
+<td noWrap align="center" class="header-L" style="width:  54px;">時刻</td>
+<td noWrap align="center" class="header-M" style="width:  54px;">コード</td>
+<td noWrap align="center" class="header-M" style="width: 170px;">会社名</td>
+<td noWrap align="center" class="header-M" >表題</td>
+<td noWrap align="center" class="header-M" style="width:  86px;">XBRL</td>
+<td noWrap align="center" class="header-M" style="width:  84px;">上場取引所</td>
+<td noWrap align="center" class="header-R" style="width: 135px;">更新履歴</td>
+</tr>
+</table>
+</div>
+<div id="main-list">
+<table border="0" cellSpacing="0" cellPadding="3" align="left" id="main-list-table">
+<tr>
+<td class="oddnew-L kjTime" noWrap>08:00</td>
+<td class="oddnew-M kjCode" noWrap>70950</td>
+<td class="oddnew-M kjName" noWrap>Ｍ－ＭａｃｂｅｅＰ   </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200324483407.pdf" target="_blank">親会社以外の支配株主の異動に関するお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>08:00</td>
+<td class="evennew-M kjCode" noWrap>70950</td>
+<td class="evennew-M kjName" noWrap>Ｍ－ＭａｃｂｅｅＰ   </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200324483386.pdf" target="_blank">親会社以外の支配株主の異動及び主要株主の異動に関するお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>08:00</td>
+<td class="oddnew-M kjCode" noWrap>70950</td>
+<td class="oddnew-M kjName" noWrap>Ｍ－ＭａｃｂｅｅＰ   </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200324483408.pdf" target="_blank">成長可能性に関する説明資料</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>08:00</td>
+<td class="evennew-M kjCode" noWrap>70950</td>
+<td class="evennew-M kjName" noWrap>Ｍ－ＭａｃｂｅｅＰ   </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200324483411.pdf" target="_blank">東京証券取引所マザーズへの上場に伴う当社決算情報等のお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="kaiji-info-box-bottom">
+<tr>
+<td align="left" noWrap id="kaiji-kensu-2">
+<div id="kaiji-date-2">2020年03月31日</div>
+<div id="kaiji-text-2">に開示された情報</div>
+</td>
+<td></td>
+<td align="center" noWrap class="pagerTd">
+<div id="pager-box-bottom">
+<div class="kaijiSum">1～4件&nbsp;/&nbsp;全4件</div>
+<div class="pager-L" onClick="pager('')"><img src="./gif/icn_back.png" alt="前へ"></img><span>前へ</span></div>
+<div class="pager-O" onClick="pagerLink('I_list_001_20200331.html')">1</div>
+<div class="pager-R" onClick="pager('')"><span>次へ</span><img src="./gif/icn_next.png" alt="次へ"></img></div>
+</div>
 </td>
 </tr>
 </table>
 </div>
-<div id="main-list" style="height:55px;"></div>
 </td>
 </tr>
 <tr>
