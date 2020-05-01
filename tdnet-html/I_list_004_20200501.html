@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>適時開示情報閲覧サービス - 開示情報一覧</title>
+<meta content="text/html" charset="UTF-8" http-equiv="content-type">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<script type="text/javascript" charset="UTF-8" src="./js/I_JAVASCRIPT.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./js/I_MENSEKI.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./runtime/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+<!--
+  $(document).ready(function(){
+    $(".pagerTd > DIV >  DIV[onClick]").mousedown(function(event){
+      event.currentTarget.setAttribute("id","pager_active");
+    });
+    $(".pagerTd > DIV > DIV[onClick]").mouseup(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+    $(".pagerTd > DIV > DIV[onClick]").mouseleave(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+
+    $(".xbrl-mask > DIV > A").mousedown(function(event){
+      event.currentTarget.setAttribute("id","xbrl-button_active");
+    });
+    $(".xbrl-mask > DIV > A").mouseup(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+    $(".xbrl-mask > DIV > A").mouseleave(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+  });
+// -->
+</script>
+<link rel="stylesheet" href="./css/I_STYLE.css" media="screen">
+</head>
+<body leftMargin="0" topMargin="0" bottomMargin="0" marginwidth="0" marginheight="0" width="100%" style="background-color: #eeeeee;">
+<form method="get" name="form2" action="../">
+<table border="0" cellSpacing="0" cellPadding="0" id="list-body-box">
+<tr>
+<td id="list-table-data">
+<div id="floating-menu">
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="kaiji-info-box-top">
+<tr>
+<td align="left" noWrap id="kaiji-kensu-1">
+<div id="kaiji-date-1">2020年05月01日</div>
+<div id="kaiji-text-1">に開示された情報</div>
+</td>
+<td></td>
+<td align="center" noWrap class="pagerTd">
+<div id="pager-box-top">
+<div class="kaijiSum">301～311件&nbsp;/&nbsp;全311件</div>
+<div class="pager-L" onClick="pager('I_list_003_20200501.html')"><img src="./gif/icn_back.png" alt="前へ"></img><span>前へ</span></div>
+<div class="pager-M" onClick="pagerLink('I_list_001_20200501.html')">1</div><div class="pager-M" onClick="pagerLink('I_list_002_20200501.html')">2</div><div class="pager-M" onClick="pagerLink('I_list_003_20200501.html')">3</div><div class="pager-O" onClick="pagerLink('I_list_004_20200501.html')">4</div>
+<div class="pager-R" onClick="pager('')"><span>次へ</span><img src="./gif/icn_next.png" alt="次へ"></img></div>
+</div>
+</td>
+</tr>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="list-head">
+<tr>
+<td noWrap align="center" class="header-L" style="width:  54px;">時刻</td>
+<td noWrap align="center" class="header-M" style="width:  54px;">コード</td>
+<td noWrap align="center" class="header-M" style="width: 170px;">会社名</td>
+<td noWrap align="center" class="header-M" >表題</td>
+<td noWrap align="center" class="header-M" style="width:  86px;">XBRL</td>
+<td noWrap align="center" class="header-M" style="width:  84px;">上場取引所</td>
+<td noWrap align="center" class="header-R" style="width: 135px;">更新履歴</td>
+</tr>
+</table>
+</div>
+<div id="main-list">
+<table border="0" cellSpacing="0" cellPadding="3" align="left" id="main-list-table">
+<tr>
+<td class="oddnew-L kjTime" noWrap>09:10</td>
+<td class="oddnew-M kjCode" noWrap>72550</td>
+<td class="oddnew-M kjName" noWrap>Ｊ－桜井製作            </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200501403508.pdf" target="_blank">自己株式の取得状況に関するお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>09:00</td>
+<td class="evennew-M kjCode" noWrap>16900</td>
+<td class="evennew-M kjName" noWrap>原油ＥＴＦ               </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200501403477.pdf" target="_blank">WisdomTree WTI 原油上場投資信託（1690）の新規設定の一時停止に関するお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>09:00</td>
+<td class="oddnew-M kjCode" noWrap>97820</td>
+<td class="oddnew-M kjName" noWrap>Ｊ－ディーエムエス   </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200430403402.pdf" target="_blank">2020年3月期決算発表の延期について</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>09:00</td>
+<td class="evennew-M kjCode" noWrap>98310</td>
+<td class="evennew-M kjName" noWrap>ヤマダ電機               </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200501403503.pdf" target="_blank">自己株式の取得状況に関するお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>08:55</td>
+<td class="oddnew-M kjCode" noWrap>13450</td>
+<td class="oddnew-M kjName" noWrap>上場Ｊリート            </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200501403485.pdf" target="_blank">ＥＴＦの収益分配金見込額のお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>08:55</td>
+<td class="evennew-M kjCode" noWrap>15550</td>
+<td class="evennew-M kjName" noWrap>上場Ａリート            </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200501403486.pdf" target="_blank">ＥＴＦの収益分配金見込額のお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>08:55</td>
+<td class="oddnew-M kjCode" noWrap>15660</td>
+<td class="oddnew-M kjName" noWrap>上場ＥＭ債               </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200501403487.pdf" target="_blank">ＥＴＦの収益分配金見込額のお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>08:55</td>
+<td class="evennew-M kjCode" noWrap>16770</td>
+<td class="evennew-M kjName" noWrap>上場外債                  </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200501403488.pdf" target="_blank">ＥＴＦの収益分配金見込額のお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>08:45</td>
+<td class="oddnew-M kjCode" noWrap>21800</td>
+<td class="oddnew-M kjName" noWrap>サニーサイドアップ   </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200501403473.pdf" target="_blank">新型コロナウイルス感染拡大防止に伴う「bills Waikiki（ハワイ店）」臨時休業延長のお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>08:45</td>
+<td class="evennew-M kjCode" noWrap>80310</td>
+<td class="evennew-M kjName" noWrap>三井物産                  </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200430403333.pdf" target="_blank">自己株式の取得状況（途中経過）に関するお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東名札福                  </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>08:30</td>
+<td class="oddnew-M kjCode" noWrap>32830</td>
+<td class="oddnew-M kjName" noWrap>Ｒ－プロロジ            </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200501403479.pdf" target="_blank">保有物件における火災発生に関するお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="kaiji-info-box-bottom">
+<tr>
+<td align="left" noWrap id="kaiji-kensu-2">
+<div id="kaiji-date-2">2020年05月01日</div>
+<div id="kaiji-text-2">に開示された情報</div>
+</td>
+<td></td>
+<td align="center" noWrap class="pagerTd">
+<div id="pager-box-bottom">
+<div class="kaijiSum">301～311件&nbsp;/&nbsp;全311件</div>
+<div class="pager-L" onClick="pager('I_list_003_20200501.html')"><img src="./gif/icn_back.png" alt="前へ"></img><span>前へ</span></div>
+<div class="pager-M" onClick="pagerLink('I_list_001_20200501.html')">1</div><div class="pager-M" onClick="pagerLink('I_list_002_20200501.html')">2</div><div class="pager-M" onClick="pagerLink('I_list_003_20200501.html')">3</div><div class="pager-O" onClick="pagerLink('I_list_004_20200501.html')">4</div>
+<div class="pager-R" onClick="pager('')"><span>次へ</span><img src="./gif/icn_next.png" alt="次へ"></img></div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div id="main-footer">
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="main-footer-box">
+<tr>
+<td>
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="footer-table">
+<tr>
+<td id="mensekiNiayou">
+<script>
+<!--
+document.write(mensekiNaiyou);
+// -->
+</script>
+</td>
+</tr>
+<tr>
+<td id="footerHr"><div></div></td>
+</tr>
+<tr>
+<td align="center" id="copyright">Copyright © Tokyo Stock Exchange, Inc. All rights reserved.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
