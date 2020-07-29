@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>適時開示情報閲覧サービス - 開示情報一覧</title>
+<meta content="text/html" charset="UTF-8" http-equiv="content-type">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<script type="text/javascript" charset="UTF-8" src="./js/I_JAVASCRIPT.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./js/I_MENSEKI.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./runtime/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+<!--
+  $(document).ready(function(){
+    $(".pagerTd > DIV >  DIV[onClick]").mousedown(function(event){
+      event.currentTarget.setAttribute("id","pager_active");
+    });
+    $(".pagerTd > DIV > DIV[onClick]").mouseup(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+    $(".pagerTd > DIV > DIV[onClick]").mouseleave(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+
+    $(".xbrl-mask > DIV > A").mousedown(function(event){
+      event.currentTarget.setAttribute("id","xbrl-button_active");
+    });
+    $(".xbrl-mask > DIV > A").mouseup(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+    $(".xbrl-mask > DIV > A").mouseleave(function(event){
+      event.currentTarget.removeAttribute("id");
+    });
+  });
+// -->
+</script>
+<link rel="stylesheet" href="./css/I_STYLE.css" media="screen">
+</head>
+<body leftMargin="0" topMargin="0" bottomMargin="0" marginwidth="0" marginheight="0" width="100%" style="background-color: #eeeeee;">
+<form method="get" name="form2" action="../">
+<table border="0" cellSpacing="0" cellPadding="0" id="list-body-box">
+<tr>
+<td id="list-table-data">
+<div id="floating-menu">
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="kaiji-info-box-top">
+<tr>
+<td align="left" noWrap id="kaiji-kensu-1">
+<div id="kaiji-date-1">2020年07月29日</div>
+<div id="kaiji-text-1">に開示された情報</div>
+</td>
+<td></td>
+<td align="center" noWrap class="pagerTd">
+<div id="pager-box-top">
+<div class="kaijiSum">201～221件&nbsp;/&nbsp;全221件</div>
+<div class="pager-L" onClick="pager('I_list_002_20200729.html')"><img src="./gif/icn_back.png" alt="前へ"></img><span>前へ</span></div>
+<div class="pager-M" onClick="pagerLink('I_list_001_20200729.html')">1</div><div class="pager-M" onClick="pagerLink('I_list_002_20200729.html')">2</div><div class="pager-O" onClick="pagerLink('I_list_003_20200729.html')">3</div>
+<div class="pager-R" onClick="pager('')"><span>次へ</span><img src="./gif/icn_next.png" alt="次へ"></img></div>
+</div>
+</td>
+</tr>
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="list-head">
+<tr>
+<td noWrap align="center" class="header-L" style="width:  54px;">時刻</td>
+<td noWrap align="center" class="header-M" style="width:  54px;">コード</td>
+<td noWrap align="center" class="header-M" style="width: 170px;">会社名</td>
+<td noWrap align="center" class="header-M" >表題</td>
+<td noWrap align="center" class="header-M" style="width:  86px;">XBRL</td>
+<td noWrap align="center" class="header-M" style="width:  84px;">上場取引所</td>
+<td noWrap align="center" class="header-R" style="width: 135px;">更新履歴</td>
+</tr>
+</table>
+</div>
+<div id="main-list">
+<table border="0" cellSpacing="0" cellPadding="3" align="left" id="main-list-table">
+<tr>
+<td class="oddnew-L kjTime" noWrap>11:00</td>
+<td class="oddnew-M kjCode" noWrap>27020</td>
+<td class="oddnew-M kjName" noWrap>Ｊ－マクドナルド      </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468498.pdf" target="_blank">米マクドナルドコーポレーションによる弊社株式に関する発表内容のお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>11:00</td>
+<td class="evennew-M kjCode" noWrap>40210</td>
+<td class="evennew-M kjName" noWrap>日産化                     </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468509.pdf" target="_blank">自己株式の取得結果及び取得終了に関するお知らせ </a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>11:00</td>
+<td class="oddnew-M kjCode" noWrap>99730</td>
+<td class="oddnew-M kjName" noWrap>Ｊ－小僧寿し            </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468618.pdf" target="_blank">臨時株主総会招集のための基準日設定に関するお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>10:40</td>
+<td class="evennew-M kjCode" noWrap>13134</td>
+<td class="evennew-M kjName" noWrap>Ｅ－サムスン資産運用</td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468606.pdf" target="_blank">上場ＥＴＦ(管理会社：サムスン資産運用)に関する日々の開示事項</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>10:40</td>
+<td class="oddnew-M kjCode" noWrap>13494</td>
+<td class="oddnew-M kjName" noWrap>Ｅ－ＳＳＧＡ－ＳＩＮ</td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468556.pdf" target="_blank">アジア国債・公債ＥＴＦ（正式名称：ＡＢＦ汎アジア債券インデックス・ファンド）に関する日々の開示事項</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>10:35</td>
+<td class="evennew-M kjCode" noWrap>15574</td>
+<td class="evennew-M kjName" noWrap>Ｅ－ＳＳＧＡＴＣ      </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468562.pdf" target="_blank">SPDR S&amp;P500 ETFに関する日々の開示事項</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>10:30</td>
+<td class="oddnew-M kjCode" noWrap>13264</td>
+<td class="oddnew-M kjName" noWrap>Ｅ－ワールド            </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468516.pdf" target="_blank">SPDRゴールド・シェアに関する日々の開示事項</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>10:30</td>
+<td class="evennew-M kjCode" noWrap>13854</td>
+<td class="evennew-M kjName" noWrap>Ｅ－ＵＢＳ　ＥＴＦ   </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468552.pdf" target="_blank">上場ETF-JDR （管理会社：UBSファンド・マネジメント（ルクセンブルグ）エス・エイ、外国投資法人：UBS ETF・シキャブ）に関する日々の開示事項</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>10:00</td>
+<td class="oddnew-M kjCode" noWrap>13274</td>
+<td class="oddnew-M kjName" noWrap>Ｅ－ＥａｓｙＥＴＦ   </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468454.pdf" target="_blank">S&amp;P GSCI 商品指数エネルギー＆メタル・キャップド・コンポーネント35/20・THEAM・イージーUCITS・ETFクラスＡ米ドル建受益証券に関する日々の開示事項</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>10:00</td>
+<td class="evennew-M kjCode" noWrap>15954</td>
+<td class="evennew-M kjName" noWrap>Ｅ－農中全共連ＡＭ   </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468475.pdf" target="_blank">上場ETF （管理会社：農林中金全共連アセットマネジメント株式会社） に関する日々の開示事項</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>10:00</td>
+<td class="oddnew-M kjCode" noWrap>16714</td>
+<td class="oddnew-M kjName" noWrap>Ｅ－シンプレクス      </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468444.pdf" target="_blank">上場ＥＴＦ(管理会社：シンプレクス・アセット・マネジメント)に関する日々の開示事項</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>10:00</td>
+<td class="evennew-M kjCode" noWrap>16724</td>
+<td class="evennew-M kjName" noWrap>Ｅ－ＷｉｓｄｏｍＴｒ</td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468450.pdf" target="_blank">上場ETF（管理会社：WisdomTree、外国投資法人：CSL）に関する日々の開示事項　</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>10:00</td>
+<td class="oddnew-M kjCode" noWrap>16724</td>
+<td class="oddnew-M kjName" noWrap>Ｅ－ＷｉｓｄｏｍＴｒ</td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468436.pdf" target="_blank">上場ETF（管理会社：WisdomTree、外国投資法人：MSL）に関する日々の開示事項　</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>10:00</td>
+<td class="evennew-M kjCode" noWrap>16900</td>
+<td class="evennew-M kjName" noWrap>原油ＥＴＦ               </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468447.pdf" target="_blank">対象商品指数変更を目的とした投資者総会の延会の結果に関するお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>09:45</td>
+<td class="oddnew-M kjCode" noWrap>46790</td>
+<td class="oddnew-M kjName" noWrap>田谷                        </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200721465323.pdf" target="_blank">特別損失の計上に関するお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>09:45</td>
+<td class="evennew-M kjCode" noWrap>46790</td>
+<td class="evennew-M kjName" noWrap>田谷                        </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200721465288.pdf" target="_blank">2021年3月期 第1四半期決算短信〔日本基準〕（非連結）</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"><div class="xbrl-mask"><div class="xbrl-button"><a class="style002" href="081220200721465288.zip">XBRL</a></div></div> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>09:35</td>
+<td class="oddnew-M kjCode" noWrap>15404</td>
+<td class="oddnew-M kjName" noWrap>Ｅ－三菱ＵＦＪ信託   </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468393.pdf" target="_blank">上場ETF(管理会社:三菱UFJ信託銀行)に関する日々の開示事項</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>09:30</td>
+<td class="evennew-M kjCode" noWrap>14584</td>
+<td class="evennew-M kjName" noWrap>Ｅ－楽天ＥＴＦ         </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468409.pdf" target="_blank">上場ETF（管理会社：楽天投信投資顧問）に関する日々の開示事項</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東                           </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>09:00</td>
+<td class="oddnew-M kjCode" noWrap>44460</td>
+<td class="oddnew-M kjName" noWrap>Ｌｉｎｋ－Ｕ            </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200729468387.pdf" target="_blank">東京証券取引所市場第一部への上場市場変更に関するお知らせ</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="evennew-L kjTime" noWrap>09:00</td>
+<td class="evennew-M kjCode" noWrap>45300</td>
+<td class="evennew-M kjName" noWrap>久光薬                     </td>
+<td class="evennew-M kjTitle" align="left"><a href="140120200729468403.pdf" target="_blank">取締役の辞任及び辞任後の役職に関するお知らせ</a></td>
+<td class="evennew-M kjXbrl" noWrap align="center"> </td>
+<td class="evennew-M kjPlace" noWrap align="left">東名福                     </td>
+<td class="evennew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+<tr>
+<td class="oddnew-L kjTime" noWrap>08:30</td>
+<td class="oddnew-M kjCode" noWrap>48750</td>
+<td class="oddnew-M kjName" noWrap>Ｊ－メディシノバ      </td>
+<td class="oddnew-M kjTitle" align="left"><a href="140120200727466987.pdf" target="_blank">2020年12月期 第2四半期決算短信〔米国基準〕（連結）</a></td>
+<td class="oddnew-M kjXbrl" noWrap align="center"> </td>
+<td class="oddnew-M kjPlace" noWrap align="left">東                           </td>
+<td class="oddnew-R kjHistroy" align="left">　　　　　</td>
+</tr>
+
+</table>
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="kaiji-info-box-bottom">
+<tr>
+<td align="left" noWrap id="kaiji-kensu-2">
+<div id="kaiji-date-2">2020年07月29日</div>
+<div id="kaiji-text-2">に開示された情報</div>
+</td>
+<td></td>
+<td align="center" noWrap class="pagerTd">
+<div id="pager-box-bottom">
+<div class="kaijiSum">201～221件&nbsp;/&nbsp;全221件</div>
+<div class="pager-L" onClick="pager('I_list_002_20200729.html')"><img src="./gif/icn_back.png" alt="前へ"></img><span>前へ</span></div>
+<div class="pager-M" onClick="pagerLink('I_list_001_20200729.html')">1</div><div class="pager-M" onClick="pagerLink('I_list_002_20200729.html')">2</div><div class="pager-O" onClick="pagerLink('I_list_003_20200729.html')">3</div>
+<div class="pager-R" onClick="pager('')"><span>次へ</span><img src="./gif/icn_next.png" alt="次へ"></img></div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div id="main-footer">
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="main-footer-box">
+<tr>
+<td>
+<table border="0" cellSpacing="0" cellPadding="0" align="left" id="footer-table">
+<tr>
+<td id="mensekiNiayou">
+<script>
+<!--
+document.write(mensekiNaiyou);
+// -->
+</script>
+</td>
+</tr>
+<tr>
+<td id="footerHr"><div></div></td>
+</tr>
+<tr>
+<td align="center" id="copyright">Copyright © Tokyo Stock Exchange, Inc. All rights reserved.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
